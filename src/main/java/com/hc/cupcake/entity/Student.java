@@ -1,5 +1,7 @@
 package com.hc.cupcake.entity;
 
+import java.beans.Transient;
+
 public class Student {
     private Long id;
 
@@ -108,5 +110,11 @@ public class Student {
 
     public void setChemistryScore(int chemistryScore) {
         this.chemistryScore = chemistryScore;
+    }
+
+    @Transient
+    public String getAbc()
+    {
+        return "Acb";
     }
 }
