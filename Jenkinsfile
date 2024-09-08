@@ -1,11 +1,5 @@
 pipeline {
-
     agent none
-
-    enviromment {
-        DOCKER_IMAGE = "cuongpham082/cupcake"
-    }
-
     stages {
         stage("Build") {
             agent {
