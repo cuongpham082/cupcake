@@ -9,7 +9,8 @@ pipeline {
                 }
             }
             steps {
-                 sh 'mvn -B'
+                sh 'mvn -version'
+                sh 'mvn clean install'
             }
         }
     }
