@@ -8,6 +8,7 @@ public class Student {
     private String name;
     private String className;
     private int age;
+    private String gender;
     private String address;
     private int englishScore;
     private int literatureScore;
@@ -18,10 +19,11 @@ public class Student {
     public Student() {
     }
 
-    public Student(String name, String className, int age, String address, int englishScore, int literatureScore, int mathScore, int physicsScore, int chemistryScore) {
+    public Student(String name, String className, int age, String gender, String address, int englishScore, int literatureScore, int mathScore, int physicsScore, int chemistryScore) {
         this.name = name;
         this.className = className;
         this.age = age;
+        this.gender = gender;
         this.address = address;
         this.englishScore = englishScore;
         this.literatureScore = literatureScore;
@@ -62,6 +64,14 @@ public class Student {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getAddress() {
