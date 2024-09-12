@@ -16,7 +16,7 @@ public class StudentController {
     public List<Student> getStudents() {
         List<Student> students = new ArrayList<>();
 
-        // Thêm các sinh viên vào danh sách
+        // Add students to list
         students.add(new Student("John", "12A", 17, "Male", "123 Main St", 85, 75, 90, 80,90));
         students.add(new Student("Jane", "11B", 16, "Female", "456 Park Ave", 90, 80, 85, 75,89));
         students.add(new Student("Alice", "10C", 15, "Female", "789 Oak St", 80, 85, 70, 90,78));
